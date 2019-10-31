@@ -31,7 +31,6 @@ our $SCHEMA = [
 	{sep => "ArcoLinux"},
     {item => ['exo-open --launch TerminalEmulator',                                 'Terminal',          'terminal']},
     {item => ['exo-open --launch FileManager',                                      'File Manager',      'file-manager']},
-    {item => ['exo-open --launch WebBrowser ',                                      'Web Browser',       'webbrowser-app']},
     {sep => undef},
 
      #          NAME            LABEL                ICON
@@ -62,21 +61,10 @@ our $SCHEMA = [
 
         {pipe => ['am-compositor',      'Compositor',      'compton']},
         {begin_cat => ['Openbox', 'openbox']},
-            {item => ["$editor ~/.config/openbox/menu.xml",     'Edit menu.xml',                 'text-xml']},
-            {item => ["$editor ~/.config/openbox/rc.xml",       'Edit rc.xml',                   'text-xml']},
-            {item => ["$editor ~/.config/openbox/autostart",    'Edit autostart',                'text-xml']},
-            {sep => undef},
-            {item => ['obmenu3',                                'GUI Menu Editor',               'theme']},
             {item => ['obconf',                                 'GUI Config Tool',               'theme']},
-            {item => ['obkey',                                  'GUI Keybinds',                  'theme']},
-
-            {sep => undef},
             {item => ['openbox --restart',                      'Restart Openbox',               'openbox']},
             {item => ['openbox --reconfigure',                  'Reconfigure Openbox',           'openbox']},
         {end_cat => undef},
-        {pipe => ['am-tint2-pipemenu',  'Tint2',        'tint2']},
-        {item => ['tint2conf',          'Tint2 GUI',    'tint2conf']},
-
         {sep => undef},
 
     	{pipe => ['am-kb-pipemenu',                'Display Keybinds',                  'cs-keyboard']},
