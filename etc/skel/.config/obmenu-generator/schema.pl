@@ -79,7 +79,9 @@ our $SCHEMA = [
         	{item => ['obmenu-generator -s -i -c', 'Generate a static menu with icons', 'menu-editor']},
        	 	{sep  => undef},
         	{item => ['obmenu-generator -d',       'Refresh Icon Set',                  'gtk-refresh']},
-    	{end_cat => undef},
+     	{end_cat => undef},
+     	{sep  => undef},
+        {item => ['sh ~/.config/polybar/launch.sh',       'Reload Polybar',         'gtk-refresh']},
 
     {end_cat => undef},
 
