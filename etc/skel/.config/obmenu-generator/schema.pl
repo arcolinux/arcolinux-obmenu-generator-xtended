@@ -29,11 +29,13 @@ my $editor = $CONFIG->{editor};
 
 our $SCHEMA = [
 	{sep => "ArcoLinux"},
+    #          COMMAND                 LABEL                ICON
     {item => ['exo-open --launch TerminalEmulator',                                 'Terminal',          'terminal']},
     {item => ['exo-open --launch FileManager',                                      'File Manager',      'file-manager']},
+    {item => ['exo-open --launch WebBrowser ',                                      'Web Browser',       'webbrowser-app']},
     {sep => undef},
 
-     #          NAME            LABEL                ICON
+    #          NAME            LABEL                ICON
     {cat => ['utility',     'Accessories', 'applications-utilities']},
     {cat => ['development', 'Development', 'applications-development']},
     {cat => ['education',   'Education',   'applications-science']},
@@ -56,7 +58,6 @@ our $SCHEMA = [
         {item => ['lxappearance',                           'Lxappearance',             'theme']},
         {item => ['system-config-printer',                  'Printing',                 'printer']},
         {item => ['xfce4-settings-manager',                 'Xfce4 Settings Manager',   'preferences-desktop']},
-
         {sep => undef},
 
         {pipe => ['am-compositor',      'Compositor',      'compton']},
@@ -86,7 +87,7 @@ our $SCHEMA = [
     {end_cat => undef},
 
     {sep => undef},
-    {item => ['slimlock',                      'Lock Screen',                       'lock']},
-    {item => ['oblogout',                      'Exit Openbox',                      'exit']},
+    {item => ['arcolinux-logout',                      'Lock Screen',                       'lock']},
+    {item => ['arcolinux-logout',                      'Exit Openbox',                      'exit']},
 
 ]
