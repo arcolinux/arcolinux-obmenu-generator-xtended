@@ -74,7 +74,7 @@ our $CONFIG = {
                            },
   "locale_support"      => 1,
   "missing_icon"        => "gtk-missing-image",
-  "terminal"            => "termite",
+  "terminal"            => "urxvt",
   "use_gtk3"            => 0,
   "VERSION"             => 0.86,
 }
